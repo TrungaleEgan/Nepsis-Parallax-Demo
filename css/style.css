@@ -64,6 +64,14 @@ Main Components
     right: 3rem;
 }
 
+.pod-pop {
+    position: absolute;
+    max-width: 300px;
+    z-index: 1;
+    bottom: 0px;
+    right: 3rem;
+}
+
 p {
     font-size: 3rem;
     position: fixed;
