@@ -212,8 +212,8 @@ jQuery(document).ready(function($) {
         var visibleSection = sectionsAvailable.filter('.visible');
         var visibleSectionID = visibleSection.attr('id');
         var activeNavID = visibleSectionID + "Nav";
-        var activeNav = $(activeNavID);
-        activeNav.addClass('active');
+        var activeNav = document.getElementById(activeNavID);
+        activeNav.classList.add('active');
 
     }
 
