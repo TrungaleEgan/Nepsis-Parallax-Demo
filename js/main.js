@@ -199,8 +199,22 @@ jQuery(document).ready(function($) {
 
     function checkNavigation() {
         //update navigation arrows visibility
-        (sectionsAvailable.filter('.visible').is(':first-of-type')) ? prevArrow.addClass('inactive'): prevArrow.removeClass('inactive');
+        //(sectionsAvailable.filter('.visible').is(':first-of-type')) ? prevArrow.addClass('inactive'): prevArrow.removeClass('inactive');
         //(sectionsAvailable.filter('.visible').is(':last-of-type')) ? nextArrow.addClass('inactive'): nextArrow.removeClass('inactive');
+
+        processNav.removeClass('active');
+        planningNav.removeClass('active');
+        investingNav.removeClass('active');
+        podcastNav.removeClass('active');
+        newsNav.removeClass('active');
+        aboutNav.removeClass('active');
+
+        var visibleSection = sectionsAvailable.filter('.visible');
+        var visibleSectionID = visibleSection.attr('id');
+        var activeNavID = visibleSectionID + "Nav";
+        var activeNav = $(activeNavID);
+        activeNav.addClass('active');
+
     }
 
     function resetSectionStyle() {
