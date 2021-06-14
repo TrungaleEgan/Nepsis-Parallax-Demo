@@ -213,7 +213,9 @@ jQuery(document).ready(function($) {
         var visibleSectionID = visibleSection.attr('id');
         var activeNavID = visibleSectionID + "Nav";
         var activeNav = document.getElementById(activeNavID);
-        activeNav.classList.add('active');
+        if (activeNav) {
+            activeNav.classList.add('active');
+        }
 
     }
 
