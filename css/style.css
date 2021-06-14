@@ -288,6 +288,8 @@ p {
     */
 }
 
+
+/*
 .cd-vertical-nav a.cd-prev {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -296,6 +298,7 @@ p {
     transform: rotate(180deg);
     margin-bottom: 10px;
 }
+*/
 
 .cd-vertical-nav a.inactive {
     visibility: hidden;
