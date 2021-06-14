@@ -259,17 +259,24 @@ p {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     display: none;
+    border-right: 6px solid white;
+    padding-right: 40px;
 }
 
 .cd-vertical-nav a {
     display: block;
     height: 40px;
+    color: white;
+    text-transform: uppercase;
+    /*
     width: 40px;
-    /* image replace */
+  */
+    /* image replace 
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
     background: url(../img/cd-icon-arrow.svg) no-repeat center center;
+    */
 }
 
 .cd-vertical-nav a.cd-prev {
